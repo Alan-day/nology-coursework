@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Tilt+Neon&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FEFDF8;
+}
+* body {
+  background-color: red;
+}
+
+h1, h3 {
+  color: red;
+}
+
+.picture {
+  display: flex;
+  align-items: flex-start;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a {
+  font-style: "Inter", "Arial";
+}
+
+@media screen and (max-width: 768px) {
+  section div {
+    width: 40%;
+  }
+}
