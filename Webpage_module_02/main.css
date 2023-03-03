@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FEFDF8;
+}
+* body {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+h1, h3 {
+  color: #0fc3ff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 20px;
+}
+
+.picture {
+  display: flex;
+  align-items: flex-start;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a::after {
+  text-decoration: none;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}
+
+.button {
+  padding: 5px 10px;
+  color: #102267;
+  display: inline-block;
+  border: solid 2px #102267;
+  border-radius: 5px;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.picture-right {
+  display: flex;
+  align-items: end;
+}
+
+.picture-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  section div {
+    width: 40%;
+  }
+}

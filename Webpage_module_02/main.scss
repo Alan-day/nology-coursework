@@ -1,12 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap');
+
+$font-headers: 'M PLUS Rounded 1c', sans-serif;
+$font-words: 'Nunito', sans-serif;
 
 $color-background: #FEFDF8; 
-$main-color: darkblue;
+$main-color: #102267;
 $secondary-color: white; 
-$header-color:red;
-$font-body: 'Inter', 'Arial';
-$font-words:'Tilt Neon', 'Arial';
+$header-color:#0fc3ff;
+
 
 
 
@@ -18,14 +20,16 @@ box-sizing: border-box;
 background-color: $color-background;
 
 body {
+    font-family: $font-words;
+    text-align: center;
 
-    background-color:red;
 }
 
 }
 h1, h3 {
     color: $header-color;
-    
+    font-family: $font-headers;
+    padding: 20px;
 }
 
 .picture {
@@ -41,14 +45,49 @@ div {
     
 }
 
-a {
-font-style: $font-body;    
+a::after {
+    text-decoration: none;
 }
+a {
+    display: flex;
+    text-decoration: none;
+}
+.button {
+    padding: 5px 10px;
+    color: $main-color;
+    display: inline-block;
+    border: solid 2px $main-color; 
+    border-radius: 5px;
+
+}
+
+nav {
+
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.picture-right {
+    display: flex; 
+    align-items: end;
+
+}
+
+.picture-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 768px){
     section{
 
         div{
+
             width:40%;
         }
     }
