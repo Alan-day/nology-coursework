@@ -1,94 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap');
+$font-headers: "M PLUS Rounded 1c", sans-serif;
+$font-words: "Nunito", sans-serif;
 
-$font-headers: 'M PLUS Rounded 1c', sans-serif;
-$font-words: 'Nunito', sans-serif;
-
-$color-background: #FEFDF8; 
+$color-background: #fefdf8;
 $main-color: #102267;
-$secondary-color: white; 
-$header-color:#0fc3ff;
-
-
-
-
+$secondary-color: white;
+$header-color: #0fc3ff;
+$footer-color: #f9efcd;
 
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-background-color: $color-background;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $color-background;
 
-body {
+  body {
     font-family: $font-words;
     text-align: center;
-
+  }
+}
+h1,
+h3 {
+  color: $header-color;
+  font-family: $font-headers;
+  padding: 20px;
 }
 
-}
-h1, h3 {
-    color: $header-color;
-    font-family: $font-headers;
-    padding: 20px;
+h2 {
+  padding: 20px;
+  color: $main-color;
 }
 
 .picture {
-    display: flex;
-align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 div {
-  
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 a::after {
-    text-decoration: none;
+  text-decoration: none;
 }
 a {
-    display: flex;
-    text-decoration: none;
+  display: flex;
+  text-decoration: none;
 }
-.button {
-    padding: 5px 10px;
-    color: $main-color;
-    display: inline-block;
-    border: solid 2px $main-color; 
-    border-radius: 5px;
 
+.button {
+  padding: 5px 10px;
+  color: $main-color;
+  display: inline-block;
+  border: solid 2px $main-color;
+  border-radius: 5px;
+}
+.dadvice-button {
+  display: inline-block;
+  margin: 30px 0px 30px 0px;
+  padding: 5px 30px 5px 30px;
+  color: $color-background;
+  background-color: $main-color;
+  border: solid 2px $main-color;
+  border-radius: 5px;
+}
+.main-button {
+  display: inline-block;
+  padding: 5px 30px 5px 30px;
+  color: $color-background;
+  background-color: $main-color;
+  border: solid 2px $main-color;
+  border-radius: 5px;
 }
 
 nav {
-
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px 10px 10px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
 }
 
 .picture-right {
-    display: flex; 
-    align-items: end;
-
+  display: flex;
+  align-items: end;
 }
 
 .picture-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
+.footer {
+  font-family: $font-words;
+  font-weight: bold;
+  padding: 10px;
+  color: $main-color;
+  background-color: $footer-color;
+}
+section {
+  padding-top: 5vh;
+}
 
-@media screen and (max-width: 768px){
-    section{
+p {
+  color: $main-color;
+  padding: 20px;
+}
 
-        div{
-
-            width:40%;
-        }
+@media screen and (max-width: 768px) {
+  section {
+    div {
+      width: 40%;
     }
+
+    .footer {
+      width: 100%;
+    }
+  }
 }

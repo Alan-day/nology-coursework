@@ -3,17 +3,23 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #FEFDF8;
+  background-color: #fefdf8;
 }
 * body {
   font-family: "Nunito", sans-serif;
   text-align: center;
 }
 
-h1, h3 {
+h1,
+h3 {
   color: #0fc3ff;
   font-family: "M PLUS Rounded 1c", sans-serif;
   padding: 20px;
+}
+
+h2 {
+  padding: 20px;
+  color: #102267;
 }
 
 .picture {
@@ -44,6 +50,25 @@ a {
   border-radius: 5px;
 }
 
+.dadvice-button {
+  display: inline-block;
+  margin: 30px 0px 30px 0px;
+  padding: 5px 30px 5px 30px;
+  color: #fefdf8;
+  background-color: #102267;
+  border: solid 2px #102267;
+  border-radius: 5px;
+}
+
+.main-button {
+  display: inline-block;
+  padding: 5px 30px 5px 30px;
+  color: #fefdf8;
+  background-color: #102267;
+  border: solid 2px #102267;
+  border-radius: 5px;
+}
+
 nav {
   height: 10vh;
   display: flex;
@@ -61,10 +86,31 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  color: #102267;
+  background-color: #f9efcd;
+}
+
+section {
+  padding-top: 5vh;
+}
+
+p {
+  color: #102267;
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
   section div {
     width: 40%;
+  }
+  section .footer {
+    width: 100%;
   }
 }
